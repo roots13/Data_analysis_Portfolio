@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papa Amadou Mody Ndiaye | Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1220;--card:#111827;--accent:#3b82f6;--text:#e5e7eb;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#020617, #0b1220);color:var(--text)}
+    header{padding:60px 20px 40px;text-align:center}
+    .hero{display:flex;flex-direction:column;align-items:center;gap:18px;animation:fadeIn 1s ease}
+    .avatar{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);box-shadow:0 10px 30px rgba(59,130,246,.35)}
+    h1{margin:0;font-size:2.4rem}
+    .subtitle{color:var(--muted)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:10px}
+    .btn{padding:10px 16px;border-radius:10px;text-decoration:none;color:white;background:var(--accent);box-shadow:0 8px 18px rgba(59,130,246,.35);transition:.25s transform,.25s box-shadow}
+    .btn.secondary{background:#1f2937}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(59,130,246,.45)}
+    nav{position:sticky;top:0;background:rgba(2,6,23,.6);backdrop-filter:blur(8px);padding:10px;text-align:center;border-top:1px solid #0f172a;border-bottom:1px solid #0f172a}
+    nav a{color:var(--text);margin:0 12px;text-decoration:none;font-weight:600}
+    section{max-width:1100px;margin:40px auto;padding:0 20px}
+    h2{margin-bottom:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:var(--card);padding:22px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.25);transition:.25s transform,.25s box-shadow}
+    .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+    .project iframe{width:100%;height:220px;border:0;border-radius:10px;background:#020617}
+    ul{line-height:1.7;margin:0;padding-left:18px}
+    footer{margin-top:50px;padding:26px;text-align:center;color:var(--muted);border-top:1px solid #0f172a}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <!-- Remplacer photo.jpg par votre photo professionnelle -->
+      <img src="photo.jpg" alt="Photo professionnelle" class="avatar">
+      <h1>Papa Amadou Mody Ndiaye</h1>
+      <p class="subtitle">Data Manager • Data Analyst • Digital Health Specialist</p>
+      <div class="cta">
+        <!-- Remplacer par votre vrai lien LinkedIn -->
+        <a class="btn" href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+        <!-- Uploader votre CV en le nommant cv.pdf dans le repo -->
+        <a class="btn secondary" href="cv.pdf" download>Télécharger le CV</a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#experience">Expériences</a>
+    <a href="#education">Formation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>À propos</h2>
+    <div class="card">
+      <p>Gestionnaire de données au Ministère de la Santé du Sénégal (DSME), spécialisé dans l’analyse des indicateurs de santé maternelle et infantile, la qualité des données et la digitalisation des systèmes d’information. Expérience en SQL, Excel, Power BI et plateformes DHIS2 pour le pilotage de la performance.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Compétences</h2>
+    <div class="grid">
+      <div class="card"><strong>Data</strong><ul><li>SQL / MySQL</li><li>Excel avancé</li><li>Power BI</li><li>Nettoyage & QA des données</li></ul></div>
+      <div class="card"><strong>Systèmes Santé</strong><ul><li>DHIS2</li><li>KoboToolbox</li><li>Indicateurs SRMNIA</li><li>Reporting</li></ul></div>
+      <div class="card"><strong>IT & Web</strong><ul><li>WordPress</li><li>PHP / Java / Python</li><li>Support IT</li><li>Gestion de projet</li></ul></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projets & Dashboards (Power BI)</h2>
+    <div class="grid">
+      <div class="card project">
+        <h3>Suivi CPN & Accouchements Assistés</h3>
+        <!-- Coller ici le lien d'intégration Power BI (Publish to web) -->
+        <iframe src="https://app.powerbi.com/view?r=example"></iframe>
+        <p>Dashboard de suivi des indicateurs de santé maternelle.</p>
+      </div>
+      <div class="card project">
+        <h3>Performance des Services SRMNIA</h3>
+        <iframe src="https://app.powerbi.com/view?r=example"></iframe>
+        <p>Analyse des performances et tendances régionales.</p>
+      </div>
+      <div class="card project">
+        <h3>Qualité des Données DHIS2</h3>
+        <iframe src="https://app.powerbi.com/view?r=example"></iframe>
+        <p>Détection des doublons et valeurs manquantes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Expériences</h2>
+    <div class="grid">
+      <div class="card"><strong>Gestionnaire de données — DSME (2023 - Présent)</strong><ul><li>Collecte & nettoyage des bases</li><li>Analyses statistiques</li><li>Tableaux de bord Power BI</li><li>Études en santé publique</li></ul></div>
+      <div class="card"><strong>Responsable IT — Global Vision Consolidated (2020 - 2023)</strong><ul><li>Gestion du site web</li><li>Campagnes digitales</li><li>Support & maintenance</li></ul></div>
+      <div class="card"><strong>Stagiaire Développeur — HELIX Technology Management (2020)</strong><ul><li>Sites WordPress</li><li>Maintenance outils</li></ul></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Formation</h2>
+    <div class="grid">
+      <div class="card">Licence en Communication Digitale — Global Vision Consolidated (2021–2024)</div>
+      <div class="card">Honors Diploma in IT: Software Engineering — NIIT Sénégal (2019)</div>
+      <div class="card">Certificats: Data Analysis (FORCE-N, 2025) • ActivityInfo IMS (2025)</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email : papaamadoumodyndiaye@gmail.com</p>
+      <p>Téléphone : +221 77 398 68 52</p>
+      <p>Localisation : Bargny, Rufisque, Dakar — Sénégal</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Papa Amadou Mody Ndiaye — Data Analyst Portfolio
+  </footer>
+</body>
+</html>
